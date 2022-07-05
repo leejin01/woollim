@@ -1,0 +1,447 @@
+@font-face {
+    font-family: 'S-CoreDream-2ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-7ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{margin: 0; padding: 0;}
+body{
+    font-family: 'S-CoreDream-4Regular';
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+    position: relative;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+h1{
+text-align: center;
+font-size: 36px;
+font-family: 'S-CoreDream-5Medium';
+}
+
+/*헤더*/
+#header{
+    height: 130px;
+}
+
+.header_inner{
+    position: relative;
+    width: 1320px;
+    margin: 30px auto;
+}
+
+.header_inner img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5px;
+}
+
+.header_inner ul{
+    font-family:'S-CoreDream-3Light';
+    float: right;
+    font-size: 16px;
+}
+.header_inner li{
+    float: left;
+}
+
+.li1{
+    margin-right: 60px;
+}
+
+.li2{
+    margin-right: 60px;
+}
+
+.li3{
+    margin-right: 60px;
+}
+
+.header_inner li a:hover{
+font-weight: bold;
+}
+/*헤더*/
+
+/*네비*/
+#nav{
+    height: 60px;
+}
+
+.nav_inner{
+    width: 1320px;
+    margin: auto;
+    position: relative;
+}
+
+.nav{
+    width: 853.77px;    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'S-CoreDream-4Regular';
+    font-size: 18px;
+}
+
+.nav> li{
+    float: left;
+    position: relative;/*서브메뉴의 기준*/
+}
+
+
+.nav> li> a{
+    display: block;
+    padding: 15px 30px;
+}
+.nav> li:hover> a{
+border-bottom: 3px solid #7da2df;
+}
+
+.margin{
+    margin-right: 80px;
+}
+/*네비*/
+
+
+
+/*서브메뉴 꾸미기*/
+.sub li a{
+    display: block;
+    padding: 15px 0;/*좌우여백은 안 넣는다!*/
+    text-align: center;
+    background-color: #fafafa;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 16px;
+    font-family: 'S-CoreDream-3Light';
+}
+.sub li a:hover{
+    background-color: #ccc;
+}
+
+/*서브메뉴 띄우기, 없애기*/
+.sub{
+    position: absolute;
+    width: 100%;/*nav li만큼 커짐.*/
+    display: none;/*서브메뉴 없애기*/
+}
+
+/*nav li마우스를 올렸을 때 서브메뉴 나타나기*/
+.nav li:hover .sub{
+    display: block;
+}
+
+/*이벤트1*/
+
+#event1{
+margin-top: 130px;
+}
+
+.event1_inner{
+    width: 530px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 170px;
+}
+
+.event1_inner p{
+    line-height: 36px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.event1_inner span:hover{
+    text-decoration: underline;
+}
+
+
+span{
+font-size: 30px;
+}
+/*이벤트*/
+
+/*이벤트배너1*/
+#event_banner1{
+    margin-top: 60px;
+}
+
+#event_banner1 img{
+    width: 100%;
+}
+/*이벤트배너1*/
+
+/*이벤트2*/
+#event2{
+    margin-top: 60px;
+}
+
+.event2_inner{
+    width: 530px;
+    margin: auto;
+}
+.event2_inner h1{
+margin-top: 170px;
+}
+
+.event2_inner p{
+    line-height: 36px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.event2_inner span:hover{
+    text-decoration: underline;
+}
+/*이벤트2*/
+
+/*이벤트배너2*/
+#event_banner2{
+    margin-top: 60px;
+    background: url(../images/eventbanner2.jpg) no-repeat center;
+    height: 500px;
+}
+
+.event_banner2_inner{
+    width: 1200px;
+    margin: auto;
+}
+
+.event_banner2_inner p{
+    padding-top: 250px;
+    font-size: 24px;
+    color: #fff;
+    font-family: 'S-CoreDream-5Medium';
+    line-height: 36px;
+}
+/*이벤트배너2*/
+
+/*리미티드*/
+#limited{
+    margin-top: 60px;
+    height: 1100px;
+}
+
+.limited_inner{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+
+.limited_inner h1{
+    margin-bottom: 170px;
+}
+
+.limitedleft{
+    position: absolute;
+    left: 0;
+    top: 180px;
+}
+
+
+.limitedright{
+    position: absolute;
+    right: 0;
+    top: 180px;
+}
+
+/*리미티드*/
+
+/*리미티드박스*/
+#box{
+    background-color: rgba(92, 119, 156, 0.6);
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 706px;
+}
+
+.box_inner{
+    width: 400px;
+    margin: auto;
+    color: #fff;
+}
+
+.box_inner .padding{
+    padding: 50px 0 0 0;
+}
+
+.box_inner .font{
+    font-size: 14px;
+    line-height: 24px;
+    margin: 15px 0 10px 0 ;
+}
+.span1{
+    padding-left: 82px;
+    font-size: 14px;
+}
+
+.span1_1{
+    padding-left: 100px;
+    font-size: 14px;
+}
+.prize{
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.span2{
+    padding-left: 170px;
+    font-size: 24px;
+}
+.span2 a{
+    color: #fff;
+}
+.span2 a:hover{
+color: #333;
+}
+
+#box2{
+    background-color: rgba(92, 119, 156, 0.6);
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    right: 0;
+    top: 706px;
+}
+
+.box2_inner{
+    width: 400px;
+    margin: auto;
+    color: #fff;
+}
+
+.box2_inner .padding{
+    padding: 50px 0 0 0;
+}
+
+.box2_inner .font{
+    font-size: 14px;
+    line-height: 24px;
+    margin: 15px 0 10px 0 ;
+}
+.span1{
+    padding-left: 82px;
+    font-size: 14px;
+}
+
+.span1_1{
+    padding-left: 100px;
+    font-size: 14px;
+}
+.prize{
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.span2{
+    padding-left: 170px;
+    font-size: 24px;
+}
+.span2 a{
+    color: #fff;
+}
+.span2 a:hover{
+color: #333;
+}
+/*리미티드박스*/
+
+/*푸터*/
+#footer{
+    height: 260px;
+    background: url(../images/footer.jpg) no-repeat center;
+}
+
+.footer_inner{
+    width: 1080px;
+    margin: auto;
+    position: relative;
+}
+
+.footer{
+    padding: 30px 0;
+    font-size: 16px;
+    font-family: 'S-CoreDream-5Medium';
+    margin-bottom: 40px;
+}
+
+.footer li{
+    float: left;
+}
+.footer li a{
+    color:rgba(255, 255, 255, 0.7);
+}
+
+.footer li a:hover{
+color: #fff;
+}
+
+.space{
+    margin-right: 100px;
+}
+
+.footer2{
+position: absolute;
+right: 3px;
+top: 75px;
+}
+
+.footer3{
+  position: absolute;
+  right: 0;
+  top: 160px;
+}
+
+.footer3 li{
+    float: left;
+    margin-left: 10px;
+    opacity: 0.7;
+}
+
+.footer3 li:hover{
+    opacity: 1;
+}
+
+.footer_inner p{
+    font-size: 12px;
+    line-height: 24px;
+    clear: both;
+    color: #fff;
+}
+/*푸터*/

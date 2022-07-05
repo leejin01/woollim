@@ -1,0 +1,532 @@
+@font-face {
+    font-family: 'S-CoreDream-2ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-7ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{margin: 0; padding: 0;}
+body{
+    font-family: 'S-CoreDream-4Regular';
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+    position: relative;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+h1{
+text-align: center;
+font-size: 36px;
+font-family: 'S-CoreDream-5Medium';
+}
+
+/*헤더*/
+#header{
+    height: 130px;
+}
+
+.header_inner{
+    position: relative;
+    width: 1320px;
+    margin: 30px auto;
+}
+
+.header_inner img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5px;
+}
+
+.header_inner ul{
+    font-family:'S-CoreDream-3Light';
+    float: right;
+    font-size: 16px;
+}
+.header_inner li{
+    float: left;
+}
+
+.li1{
+    margin-right: 60px;
+}
+
+.li2{
+    margin-right: 60px;
+}
+
+.li3{
+    margin-right: 60px;
+}
+
+.header_inner li a:hover{
+font-weight: bold;
+}
+/*헤더*/
+
+/*네비*/
+#nav{
+    height: 60px;
+}
+
+.nav_inner{
+    width: 1320px;
+    margin: auto;
+    position: relative;
+}
+
+.nav{
+    width: 853.77px;    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'S-CoreDream-4Regular';
+    font-size: 18px;
+}
+
+.nav> li{
+    float: left;
+    position: relative;/*서브메뉴의 기준*/
+}
+
+
+.nav> li> a{
+    display: block;
+    padding: 15px 30px;
+}
+.nav> li:hover> a{
+border-bottom: 3px solid #7da2df;
+}
+
+.margin{
+    margin-right: 80px;
+}
+/*네비*/
+
+
+
+/*서브메뉴 꾸미기*/
+.sub li a{
+    display: block;
+    padding: 15px 0;/*좌우여백은 안 넣는다!*/
+    text-align: center;
+    background-color: #fafafa;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 16px;
+    font-family: 'S-CoreDream-3Light';
+}
+.sub li a:hover{
+    background-color: #ccc;
+}
+
+/*서브메뉴 띄우기, 없애기*/
+.sub{
+    position: absolute;
+    width: 100%;/*nav li만큼 커짐.*/
+    display: none;/*서브메뉴 없애기*/
+}
+
+/*nav li마우스를 올렸을 때 서브메뉴 나타나기*/
+.nav li:hover .sub{
+    display: block;
+}
+
+/*셀링*/
+/*텍스트*/
+#text{
+    height: 350px;
+}
+.text_inner{
+    width: 1100px;
+    margin: auto;
+}
+.textmargin1{
+    margin-right: 50px;
+}
+.textmargin2{
+    margin-right: 35px;
+}
+
+.textmargin3{
+    margin-right: 55px;
+}
+
+.text_inner ul li{
+    float: left;
+    margin-top: 20px;
+}
+
+.text_inner ul li:hover{
+    opacity: 0.7;
+}
+
+.text_inner li a span{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    padding: 10px 10px;
+}
+
+.text_inner li img{
+    margin: 12%;
+}
+.text_inner ul li:nth-child(1) span{
+    display: inline-block;
+    background-color: #7ebddd;
+    border-radius: 0px 30px 30px 30px;
+    width: 220px;
+    padding: 5px 10px;
+}
+.text_inner ul li:nth-child(2) span{
+background-color: #7da2df;
+border-radius: 0px 30px 30px 30px;
+width: 220px;
+}
+.text_inner ul li:nth-child(3) span{
+background-color: #c6a4e4;
+border-radius: 0px 30px 30px 30px;
+width: 220px;
+}
+.text_inner ul li:nth-child(4) span{
+background-color: #536e93;
+border-radius: 0px 30px 30px 30px;
+width: 220px;
+}
+/*텍스트*/
+/*셀링*/
+
+
+/*스피커 제목*/
+#h2_1{
+background-color: #7ebddd;
+}
+
+.h2_1_inner{
+    width: 1060px;
+    margin: auto;
+}
+#h2_1 h2{
+    display: block;
+color: #fff;
+text-align: left;
+padding: 30px 0px;
+font-size: 36px;
+}
+/*스피커 제목*/
+
+/*스피커*/
+#speaker{
+    margin-top: 140px;
+    height: 700px;
+}
+.speaker_inner{
+    width: 1100px;
+    margin: auto;
+}
+
+span{
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.size{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.speaker_inner li{
+    float: left;
+}
+
+.margin2{
+    margin-right:100px;
+}
+.padding{
+    margin-right: 60px;
+    margin-left: 20px;
+}
+.bottom{
+    margin-bottom: 40px;
+}
+.underline:hover{
+text-decoration: underline;
+}
+
+.speaker_inner span:hover{
+    background-color: #7ebddd;
+    border-radius:0px 30px 30px 30px;
+    padding: 5px 10px;
+}
+span a:hover{
+    color: #Fff;
+}
+#bigbox img{
+    transition: all 0.5s;
+    margin-bottom: 20px;
+}
+
+#bigbox img:hover{
+    transform: scale(1.1,1.1);
+}
+
+/*스피커*/
+
+/*배너*/
+#sellingbanner{
+    height: 900px;
+    background: url(../images/sellingbanner.jpg) no-repeat center;
+}
+
+
+.sellingbanner_inner{
+    width: 1300px;
+    margin: auto;
+}
+.sellingbanner_inner a{
+    display: inline-block;
+    border: #333 1px solid;
+    padding: 5px 15px;
+    margin-top: 580px;
+}
+
+.sellingbanner_inner a:hover{
+  color: rgb(209, 42, 42);
+}
+/*배너*/
+
+/*신디사이저 제목*/
+#h2_2{
+    background-color: #7da2df;
+}
+.h2_2_inner{
+    width: 1060px;
+    margin: auto;
+}
+#h2_2 h2{
+    display: block;
+color: #fff;
+text-align: left;
+padding: 30px 0px;
+font-size: 36px;
+}
+/*신디사이저 제목*/
+
+/*신디사이저*/
+
+#synthesizer{
+    margin-top: 140px;
+    height: 700px;
+}
+    .synthesizer_inner{
+        width: 1100px;
+        margin: auto;
+    }
+    .synthesizer_inner span{
+        font-size: 20px;
+    }
+    .synthesizer_inner li{
+        float: left;
+    }
+    
+
+    .synthesizer_inner span:hover{
+        background-color: #7da2df;
+        border-radius:0px 30px 30px 30px;
+        padding: 5px 10px;
+    }
+.size1{
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+/*신디사이저*/
+
+
+/*기타제목*/
+#h2_3{
+    background-color: #c6a4e4;
+    }
+    
+    .h2_3_inner{
+        width: 1060px;
+        margin: auto;
+    }
+    #h2_3 h2{
+        display: block;
+    color: #fff;
+    text-align: left;
+    padding: 30px 0px;
+    font-size: 36px;
+    }
+/*기타제목*/
+
+/*기타*/
+
+#guitar{
+    height: 700px;
+    margin-top: 140px;
+}
+.guitar_inner{
+    width: 1200px;
+    margin: auto;
+}
+
+.guitar_inner li{
+    float: left;
+}
+
+.guitar_inner span:hover{
+    background-color: #c6a4e4;
+    border-radius:0px 30px 30px 30px;
+    padding: 5px 10px;
+}
+
+.size1{
+    margin-bottom: 40px;
+    font-size: 16px;
+    }
+
+/*기타*/
+
+/*앰프 제목*/
+#h2_4{
+    background-color: #536e93;
+    }
+    
+    .h2_4_inner{
+        width: 1060px;
+        margin: auto;
+    }
+    #h2_4 h2{
+        display: block;
+    color: #fff;
+    text-align: left;
+    padding: 30px 0px;
+    font-size: 36px;
+    }
+/*앰프 제목*/
+
+/*앰프*/
+#amp{
+    margin-top: 140px;
+    height: 700px;
+}
+.amp_inner{
+    width: 1200px;
+    margin: auto;
+}
+
+.amp_inner span{
+    font-size: 20px;
+}
+.amp_inner li{
+    float: left;
+}
+
+
+.amp_inner span:hover{
+    background-color: #536e93;
+    border-radius:0px 30px 30px 30px;
+    padding: 5px 10px;
+}
+.size1{
+margin-bottom: 40px;
+font-size: 16px;
+}
+/*앰프*/
+
+/*푸터*/
+#footer{
+    height: 260px;
+    background: url(../images/footer.jpg) no-repeat center;
+}
+
+.footer_inner{
+    width: 1080px;
+    margin: auto;
+    position: relative;
+}
+
+.footer{
+    padding: 30px 0;
+    font-size: 16px;
+    font-family: 'S-CoreDream-5Medium';
+    margin-bottom: 40px;
+}
+
+.footer li{
+    float: left;
+}
+.footer li a{
+    color:rgba(255, 255, 255, 0.7);
+}
+
+.footer li a:hover{
+color: #fff;
+}
+
+.space{
+    margin-right: 100px;
+}
+
+.footer2{
+position: absolute;
+right: 3px;
+top: 75px;
+}
+
+.footer3{
+  position: absolute;
+  right: 0;
+  top: 160px;
+}
+
+.footer3 li{
+    float: left;
+    margin-left: 10px;
+    opacity: 0.7;
+}
+
+.footer3 li:hover{
+    opacity: 1;
+}
+
+.footer_inner p{
+    font-size: 12px;
+    line-height: 24px;
+    clear: both;
+    color: #fff;
+}
+/*푸터*/
