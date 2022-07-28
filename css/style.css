@@ -186,6 +186,7 @@ margin:auto;
 
 .best_inner li{
 float: left;
+width: 350px;
 }
 
 .best_inner ul{
@@ -243,6 +244,7 @@ font-size: 16px;
 .sale_inner li{
     float: left;
     position: relative;
+    width: 210px;
 }
 
 .sale_inner h1{
@@ -520,6 +522,7 @@ opacity: 1;
     margin-top: 200px;
     background: url(../images/main_third_banner.jpg)no-repeat center;
     height: 1700px;
+    overflow: hidden;
 }
 
 .shipping_inner{
